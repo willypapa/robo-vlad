@@ -1,11 +1,35 @@
 {
-  "name": "learn-dom",
+  "name": "robo-vlad",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "''",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tsc && npx wdio wdio.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willypapa/robo-vlad.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willypapa/robo-vlad/issues"
+  },
+  "homepage": "https://github.com/willypapa/robo-vlad#readme",
+  "devDependencies": {
+    "@types/jasmine": "^3.5.10",
+    "@wdio/cli": "^6.1.5",
+    "@wdio/jasmine-framework": "^6.1.6",
+    "@wdio/local-runner": "^6.1.6",
+    "@wdio/spec-reporter": "^6.1.5",
+    "@wdio/sync": "^6.1.5",
+    "chromedriver": "^81.0.0",
+    "ts-node": "^8.9.1",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.8.3",
+    "wdio-chromedriver-service": "^6.0.2"
+  }
 }
