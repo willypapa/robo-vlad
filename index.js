@@ -3,7 +3,7 @@
  * @returns {(Node | null)} Unique Node or null
  * @throws When selector finds more than one Nodes
  */
-export function getElement(selector) {
+function getElement(selector) {
     const nodeList = document.querySelectorAll(selector);
 
     if (nodeList.length > 1) {
@@ -19,14 +19,14 @@ export function getElement(selector) {
 /**
  * @param {Node} node 
  */
-export function click(node) {
+function click(node) {
     dispatchMouseEvent(node, 'click');
 }
 
 /**
  * @param {Node} node 
  */
-export function naturalClick(node) {
+function naturalClick(node) {
     dispatchMouseEvent(node, 'mouseover');
     dispatchMouseEvent(node, 'mousedown');
     dispatchMouseEvent(node, 'mouseup');
@@ -37,7 +37,7 @@ export function naturalClick(node) {
  * @param {Node} node 
  * @param {string} mouseEventType E.g. 'mouseup', 'mousedown'
  */
-export function dispatchMouseEvent(node, mouseEventType) {
+function dispatchMouseEvent(node, mouseEventType) {
     node.dispatchEvent(
         new MouseEvent(mouseEventType)
     );
@@ -50,7 +50,7 @@ export function dispatchMouseEvent(node, mouseEventType) {
  * @param {Node} inputNode 
  * @param {(number|string|boolean|null)} value 
  */
-export function type(inputNode, value) {
+function type(inputNode, value) {
     inputNode.value = value;
     inputNode.dispatchEvent(
         new Event('change')
@@ -63,7 +63,7 @@ export function type(inputNode, value) {
  * @param {*} option 
  * @throws When there are no options with that value
  */
-export function selectDropdownValue(selectNode, optionValue) {
+function selectDropdownValue(selectNode, optionValue) {
     const optionsCount = select.options.length;
     let hasOptionValue = false;
 
@@ -93,7 +93,7 @@ export function selectDropdownValue(selectNode, optionValue) {
  * @param {*} option 
  * @throws When there are no options at that index
  */
-export function selectDropdownIndex(selectNode, optionIndex) {
+function selectDropdownIndex(selectNode, optionIndex) {
     const maxIndex = select.options.length - 1
 
     if (optionIndex > maxIndex) {
@@ -113,6 +113,6 @@ export function selectDropdownIndex(selectNode, optionIndex) {
 /**
  * @param {Node} selectNode 
  */
-export function clearDropdown(selectNode) {
+function clearDropdown(selectNode) {
     selectNode.value = null;
 }
