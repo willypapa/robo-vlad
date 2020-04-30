@@ -1,10 +1,11 @@
 {
-  "name": "robo-vlad/cypress",
+  "name": "@robo-vlad/cypress",
   "version": "1.0.0",
   "description": "",
   "main": "",
   "scripts": {
-    "test": ""
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,7 @@
   },
   "homepage": "https://github.com/willypapa/robo-vlad#readme",
   "devDependencies": {
+    "cypress": "^4.5.0",
+    "typescript": "^3.8.3"
   }
 }
