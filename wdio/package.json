@@ -1,11 +1,8 @@
 {
-  "name": "robo-vlad",
+  "name": "robo-vlad/wdio",
   "version": "1.0.0",
   "description": "",
-  "main": "''",
-  "directories": {
-    "test": "test"
-  },
+  "main": "",
   "scripts": {
     "test": "tsc && npx wdio wdio.conf.js"
   },

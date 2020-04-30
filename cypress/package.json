@@ -1,0 +1,21 @@
+{
+  "name": "robo-vlad/cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willypapa/robo-vlad.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willypapa/robo-vlad/issues"
+  },
+  "homepage": "https://github.com/willypapa/robo-vlad#readme",
+  "devDependencies": {
+  }
+}

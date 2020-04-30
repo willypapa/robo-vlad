@@ -1,3 +1,5 @@
 # robo-vlad 
 
-Trying out automated testing approaches.
+Trying out the different automated testing open source projects with TypeScript.
+    ## Webdriver.io
+    ## Cypress
